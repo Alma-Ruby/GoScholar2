@@ -1,18 +1,18 @@
 //
-//  Filter.swift
+//  LogIn.swift
 //  GoScholar
 //
-//  Created by Scholar on 6/11/24.
+//  Created by Scholar on 6/13/24.
 //
 
 import SwiftUI
 
-struct Filter: View {
+struct LogIn: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
 #Preview {
-    Filter()
+    LogIn()
 }
