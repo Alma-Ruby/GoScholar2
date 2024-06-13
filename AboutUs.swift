@@ -1,34 +1,31 @@
 //
-// aboutUs.swift
+// AboutUs.swift
 // GoScholar
 //
 // Created by Scholar on 6/11/24.
 //
 import SwiftUI
-struct aboutUs: View {
+struct AboutUs: View {
   var body: some View {
     ZStack{
       ScrollView{
         NavigationStack{
           VStack{
             Menu("☰"){
-              NavigationLink(destination: CatPage()){
+                NavigationLink(destination: All()){
+                  Text("All")
+                }
+                NavigationLink(destination: HomePage()){
+                  Text("Homepage")
+                }
+                NavigationLink(destination: CatPage()){
                 Text("Categories")
               }
-              NavigationLink(destination: All()){
-                Text("All")
-              }
-              NavigationLink(destination: Filter()) {
-                Text("Filter")
-              }
-              NavigationLink(destination: Filter()) {
+              NavigationLink(destination: Quiz()) {
                 Text("Quiz")
               }
               NavigationLink(destination: Fafsa()) {
-                Text("FAFSA")
-              }
-              NavigationLink(destination: aboutUs()){
-                Text("About Us :two_hearts:")
+                Text("FAFSA Info")
               }
             }
           }
@@ -90,6 +87,7 @@ struct aboutUs: View {
       .navigationBarHidden(true)
   }
 }
+
 #Preview {
-  aboutUs()
+  AboutUs()
 }

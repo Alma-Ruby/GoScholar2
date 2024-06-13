@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD8111752C1A1D810054D10E /* EasyToApply.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8111742C1A1D810054D10E /* EasyToApply.swift */; };
+		BD8111772C1A1DCA0054D10E /* BigBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8111762C1A1DCA0054D10E /* BigBank.swift */; };
+		BD8111792C1A1DD50054D10E /* Minorities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8111782C1A1DD50054D10E /* Minorities.swift */; };
+		BD81117B2C1A43450054D10E /* Fafsa.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD81117A2C1A43450054D10E /* Fafsa.swift */; };
+		BD81117D2C1A43590054D10E /* AboutUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD81117C2C1A43590054D10E /* AboutUs.swift */; };
+		BD81117F2C1B36280054D10E /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD81117E2C1B36280054D10E /* LogIn.swift */; };
+		BD8111812C1B36920054D10E /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8111802C1B36920054D10E /* SignUp.swift */; };
+		BDE336E52C18CB0800532329 /* CatPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE336E42C18CB0800532329 /* CatPage.swift */; };
+		BDE336E92C18CC4B00532329 /* All.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE336E82C18CC4B00532329 /* All.swift */; };
+		BDE336ED2C18CC6C00532329 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE336EC2C18CC6C00532329 /* Quiz.swift */; };
+		BDE981B02C1B563A00062C00 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE981AF2C1B563A00062C00 /* HomePage.swift */; };
 		BDFCBEC82C189AD500ADAE78 /* GoScholarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFCBEC72C189AD500ADAE78 /* GoScholarApp.swift */; };
 		BDFCBECA2C189AD500ADAE78 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFCBEC92C189AD500ADAE78 /* ContentView.swift */; };
 		BDFCBECC2C189AD600ADAE78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDFCBECB2C189AD600ADAE78 /* Assets.xcassets */; };
@@ -14,6 +25,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD8111742C1A1D810054D10E /* EasyToApply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyToApply.swift; sourceTree = "<group>"; };
+		BD8111762C1A1DCA0054D10E /* BigBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigBank.swift; sourceTree = "<group>"; };
+		BD8111782C1A1DD50054D10E /* Minorities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Minorities.swift; sourceTree = "<group>"; };
+		BD81117A2C1A43450054D10E /* Fafsa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fafsa.swift; sourceTree = "<group>"; };
+		BD81117C2C1A43590054D10E /* AboutUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUs.swift; sourceTree = "<group>"; };
+		BD81117E2C1B36280054D10E /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
+		BD8111802C1B36920054D10E /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		BDE336E42C18CB0800532329 /* CatPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatPage.swift; sourceTree = "<group>"; };
+		BDE336E82C18CC4B00532329 /* All.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = All.swift; sourceTree = "<group>"; };
+		BDE336EC2C18CC6C00532329 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		BDE981AF2C1B563A00062C00 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		BDFCBEC42C189AD500ADAE78 /* GoScholar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoScholar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDFCBEC72C189AD500ADAE78 /* GoScholarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoScholarApp.swift; sourceTree = "<group>"; };
 		BDFCBEC92C189AD500ADAE78 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,9 +54,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD8111732C1A1D590054D10E /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				BDE336E42C18CB0800532329 /* CatPage.swift */,
+				BD8111762C1A1DCA0054D10E /* BigBank.swift */,
+				BD8111782C1A1DD50054D10E /* Minorities.swift */,
+				BD8111742C1A1D810054D10E /* EasyToApply.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		BDFCBEBB2C189AD500ADAE78 = {
 			isa = PBXGroup;
 			children = (
+				BDE981AF2C1B563A00062C00 /* HomePage.swift */,
+				BD8111802C1B36920054D10E /* SignUp.swift */,
+				BD81117E2C1B36280054D10E /* LogIn.swift */,
+				BDE336E82C18CC4B00532329 /* All.swift */,
+				BDE336EC2C18CC6C00532329 /* Quiz.swift */,
+				BD81117A2C1A43450054D10E /* Fafsa.swift */,
+				BD81117C2C1A43590054D10E /* AboutUs.swift */,
+				BD8111732C1A1D590054D10E /* New Group */,
 				BDFCBEC62C189AD500ADAE78 /* GoScholar */,
 				BDFCBEC52C189AD500ADAE78 /* Products */,
 			);
@@ -138,7 +179,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDFCBECA2C189AD500ADAE78 /* ContentView.swift in Sources */,
+				BDE336ED2C18CC6C00532329 /* Quiz.swift in Sources */,
+				BD81117D2C1A43590054D10E /* AboutUs.swift in Sources */,
+				BD8111792C1A1DD50054D10E /* Minorities.swift in Sources */,
+				BDE981B02C1B563A00062C00 /* HomePage.swift in Sources */,
 				BDFCBEC82C189AD500ADAE78 /* GoScholarApp.swift in Sources */,
+				BD81117B2C1A43450054D10E /* Fafsa.swift in Sources */,
+				BD81117F2C1B36280054D10E /* LogIn.swift in Sources */,
+				BD8111752C1A1D810054D10E /* EasyToApply.swift in Sources */,
+				BDE336E92C18CC4B00532329 /* All.swift in Sources */,
+				BD8111772C1A1DCA0054D10E /* BigBank.swift in Sources */,
+				BD8111812C1B36920054D10E /* SignUp.swift in Sources */,
+				BDE336E52C18CB0800532329 /* CatPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
