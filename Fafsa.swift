@@ -6,7 +6,9 @@
 //
 import SwiftUI
 struct Fafsa: View {
-  var body: some View {
+    @Binding var libraryScholar: [String]
+  
+    var body: some View {
     ZStack{
         Color.green.opacity(0.3)
             .ignoresSafeArea()
@@ -14,20 +16,20 @@ struct Fafsa: View {
         VStack{
           HStack{
             Menu("☰"){
-              NavigationLink(destination: All()){
-                Text("All")
-              }
-            NavigationLink(destination: CatPage()){
-            Text("Categories")
+                NavigationLink(destination: All(libraryScholar: libraryScholar)){
+                  Text("All")
                 }
-              NavigationLink(destination: Quiz()) {
+                NavigationLink(destination: HomePage(libraryScholar: libraryScholar)){
+                  Text("Homepage")
+                }
+                NavigationLink(destination: CatPage(libraryScholar: $libraryScholar)){
+                Text("Categories")
+              }
+              NavigationLink(destination: Quiz(libraryScholar: $libraryScholar)) {
                 Text("Quiz")
               }
-              NavigationLink(destination: Fafsa()) {
+              NavigationLink(destination: Fafsa(libraryScholar: $libraryScholar)) {
                 Text("FAFSA Info")
-              }
-              NavigationLink(destination: AboutUs()){
-                Text("About Us 💕")
               }
             }
             .position(x:-4,y:2)
@@ -84,6 +86,6 @@ struct Fafsa: View {
     }
   }
 }
-#Preview {
-  Fafsa()
-}
+//#Preview {
+//  Fafsa()
+//}

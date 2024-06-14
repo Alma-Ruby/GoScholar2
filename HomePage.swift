@@ -10,6 +10,9 @@ struct HomePage: View {
 @State var name = ""
 @State private var NewScholarship = false
 //  @Binding var name: String
+    @State var libraryScholar: [String] = []
+//    @Binding var libraryScholars: [String]
+    
   var body: some View {
     NavigationStack {
       ZStack {
@@ -19,22 +22,23 @@ struct HomePage: View {
           HStack {
             Menu("☰")
             {
-              NavigationLink(destination: All()) {
+              NavigationLink(destination: All(libraryScholar: libraryScholar)) {
                 Text("All")
               }
-              NavigationLink(destination: CatPage()) {
+              NavigationLink(destination: CatPage(libraryScholar: $libraryScholar)) {
                 Text("Categories")
               }
-              NavigationLink(destination: Quiz()) {
+              NavigationLink(destination: Quiz(libraryScholar: $libraryScholar)) {
                 Text("Quiz")
               }
-              NavigationLink(destination: Fafsa()) {
+              NavigationLink(destination: Fafsa(libraryScholar: $libraryScholar)) {
                 Text("FAFSA Info")
               }
-              NavigationLink(destination: AboutUs()) {
+              NavigationLink(destination: AboutUs(libraryScholar: $libraryScholar)) {
                 Text("About Us 💕")
               }
             }
+            
             .frame(width: 12, height: 12)
             Spacer()
 //            Symbol(person)
@@ -55,8 +59,15 @@ struct HomePage: View {
             .font(.title)
           Text("Scholarships")
             .padding()
-            .background(Color(red: 75/255, green: 182/255, blue: 115/255).opacity(0.9))            .cornerRadius(15)
+            .background(Color(red: 75/255, green: 182/255, blue: 115/255).opacity(0.9))          
+            .cornerRadius(15)
           Spacer()
+
+            Text("\(libraryScholar)")
+                .padding()
+        Spacer()
+        Spacer()
+
         }
         .padding()
         .frame(width: 360, height: 735)
@@ -69,6 +80,6 @@ struct HomePage: View {
     }
   }
 }
-#Preview {
-  HomePage()
-}
+//#Preview {
+//  HomePage()
+//}

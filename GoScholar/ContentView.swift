@@ -18,6 +18,11 @@ struct ContentView: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 100.0, height: 100.0)
                     
+                    Text("By scholars, for scholars.")
+                        .font(.title3)
+                        .fontWeight(.medium)
+                        .padding()
+
                 Spacer()
                     
                     NavigationLink(destination: LogIn()) {
